@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Karyawan - HRD POMOSDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initKaryawan()">
+    <header class="header">
+        <div class="header-brand">HRD POMOSDA - Portal Karyawan</div>
+        <div class="user-info">
+            <span id="user-email">Karyawan</span>
+            <button onclick="logout()" class="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Profil Saya</h2>
+                <div id="status-badge" class="badge"></div>
+            </div>
+            
+            <h3 class="section-title">1. Data Pribadi Karyawan</h3>
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <div class="profile-label">Nomor Induk Karyawan (NIK)</div>
+                    <div class="profile-value" id="p-nik">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Nama Lengkap</div>
+                    <div class="profile-value" id="p-nama_lengkap">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Tempat & Tanggal Lahir</div>
+                    <div class="profile-value" id="p-ttl">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Jenis Kelamin</div>
+                    <div class="profile-value" id="p-jenis_kelamin">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Alamat Sesuai KTP</div>
+                    <div class="profile-value" id="p-alamat_ktp">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Nomor HP</div>
+                    <div class="profile-value" id="p-nomor_hp">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Alamat Email Pribadi</div>
+                    <div class="profile-value" id="p-email_pribadi">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Status Perkawinan</div>
+                    <div class="profile-value" id="p-status_perkawinan">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Jumlah Anak</div>
+                    <div class="profile-value" id="p-jumlah_anak">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Nomor NPWP</div>
+                    <div class="profile-value" id="p-nomor_npwp">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Nomor BPJS/KIS</div>
+                    <div class="profile-value" id="p-nomor_bpjs">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Status Kejamaahan</div>
+                    <div class="profile-value" id="p-status_kejamaahan">-</div>
+                </div>
+            </div>
+
+            <h3 class="section-title">2. Informasi Pekerjaan (Administratif)</h3>
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <div class="profile-label">Tanggal Mulai Bekerja</div>
+                    <div class="profile-value" id="p-tanggal_mulai_bekerja">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">UPT</div>
+                    <div class="profile-value" id="p-upt">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Fungsi</div>
+                    <div class="profile-value" id="p-fungsi">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Total JP/Minggu</div>
+                    <div class="profile-value" id="p-total_jp">-</div>
+                </div>
+                <div class="profile-item" style="grid-column: 1 / -1;">
+                    <div class="profile-label">Rincian Tugas</div>
+                    <div class="profile-value" id="p-rincian_tugas">-</div>
+                </div>
+            </div>
+
+            <h3 class="section-title">3. Data Kinerja & Kompetensi</h3>
+            <div class="profile-grid">
+                <div class="profile-item">
+                    <div class="profile-label">Pendidikan Terakhir</div>
+                    <div class="profile-value" id="p-pendidikan_terakhir">-</div>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-label">Nama Sekolah/Perguruan Tinggi</div>
+                    <div class="profile-value" id="p-nama_sekolah">-</div>
+                </div>
+                <div class="profile-item" style="grid-column: 1 / -1;">
+                    <div class="profile-label">Riwayat Pelatihan/Sertifikasi</div>
+                    <div class="profile-value" id="p-riwayat_pelatihan">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
